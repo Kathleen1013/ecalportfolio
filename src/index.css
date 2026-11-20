@@ -1,0 +1,57 @@
+:root {
+  --blue: #14203B;
+  --black: #000000;
+  --cream: #ECDCBB;
+  
+  --sans: 'Forum', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Cinzel Decorative', serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--cream);
+  background-color: var(--blue);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+/* Reset basics */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue);
+  color: var(--cream);
+  font-family: var(--sans);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
